@@ -1,0 +1,118 @@
+.hero__intro{
+    margin-top: 27px;
+    border-radius: 10px;
+    background-image: url(../../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    padding: 117px 0;
+    background-position-x: right;
+    overflow: hidden;
+}
+.hero__block{
+    padding-left: 85px;
+}
+.hero__title{
+    max-width: 493px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color:#FEFCF7;
+    margin-bottom: 32px;
+}
+.hero__text{
+    max-width: 445px;
+    @include text;
+    color:#FEFCF7;
+    margin-bottom: 56px;
+}
+.hero__btn{
+    width: 217px;
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background-color:#0E8784;
+    padding: 15px 31px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEFCF7;
+}
+//responsive
+
+@media screen and (max-width: 1000px) {
+    .hero__intro{
+        background-image: url(../../img/hero-img2.jpg);
+        background-size: cover;
+        padding: 104px 0;
+    }
+    .hero__title{
+        width: 329px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 48px;
+        color:#FEFCF7;
+        margin-bottom: 24px;
+    }
+    .hero__text{
+        width: 372px;
+        @include text;
+        color:#FEFCF7;
+        margin-bottom: 40px;
+    }
+    .hero__block{
+        padding-left: 58px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hero__intro{
+        background-image: url(../../img/hero-img3.jpg);
+        background-size: cover;
+        padding: 100px 0;
+    }
+    .hero__title{
+        width: 339px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        color:#FEFCF7;
+        margin-bottom: 24px;
+    }
+    .hero__text{
+        width: 339px;
+        @include text;
+        color:#FEFCF7;
+        margin-bottom: 39px;
+    }
+    .hero__block{
+        width: 390px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero__intro{
+        background-image: url(../../img/hero-img3.jpg);
+        background-size: cover;
+        padding: 100px 24;
+    }
+    .hero__title{
+        width: 279px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        color:#FEFCF7;
+        margin-bottom: 24px;
+    }
+    .hero__text{
+        width: 279px;
+        @include text;
+        color:#FEFCF7;
+        margin-bottom: 39px;
+    }
+    .hero__block{
+        padding-left: 24px;
+    }
+    .hero__btn{
+        margin-left: -84px;
+    }
+}
